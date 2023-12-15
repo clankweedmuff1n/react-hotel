@@ -1,0 +1,57 @@
+.booking {
+  z-index: 1401;
+  padding: 0;
+  background-color: #000;
+  right: 50%;
+  width: auto;
+  transform: translate(50%, 0);
+  position: absolute;
+  bottom: 0;
+  transition: all .5s;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &_moved {
+    bottom: -32px;
+  }
+
+  &__element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #424242;
+    margin: 1rem;
+    line-height: 2rem;
+    background: #efe6df;
+    min-width: 10rem;
+    width: auto;
+
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  &__element_text {
+    margin: 0 0.5rem 0 0.5rem;
+  }
+
+  &__element_icon {
+    margin-right: 0.5rem;
+  }
+
+  &__element_primary {
+    color: #ece3da;
+    background: linear-gradient(321deg, #004d02, #00af1b, #6bff74, #006f20, #027a24, #00ff48, #7bffa0);
+    background-size: 1400% 1400%;
+    animation: PrimaryButtonAnimation 13s ease infinite;
+  }
+}
+
+@keyframes PrimaryButtonAnimation {
+  0%{background-position:74% 0%}
+  50%{background-position:27% 100%}
+  100%{background-position:74% 0%}
+}
