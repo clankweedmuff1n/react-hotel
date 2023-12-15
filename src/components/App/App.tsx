@@ -3,6 +3,7 @@ import styleApp from './App.module.scss';
 import Header from "../Header/Header";
 import Content from "../Content/Content";
 import Branding from "../Branding/Branding";
+import Main from "../Main/Main";
 
 class App extends React.Component {
     render() {
@@ -12,7 +13,7 @@ class App extends React.Component {
                 <Header/>
 
                 <Content/>
-                <Content/>
+                <Main/>
             </div>
         );
     }
