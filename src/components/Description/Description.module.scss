@@ -1,0 +1,47 @@
+.description {
+  display: flex;
+  margin: 7rem auto 7rem;
+  justify-content: center;
+
+  &__container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  &__image {
+    margin-bottom: 2rem;
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+  &__title {
+    font-size: 3rem;
+    color: #6a3a29;
+    margin-bottom: 0.5rem;
+    width: 700px;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    line-height: 2;
+    margin-bottom: 3rem;
+    width: 850px;
+  }
+
+  &__button {
+    width: 60%;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
+    border: #331c14 1px solid;
+    background: linear-gradient(to right, white 50%, #6a3a29 50%) left;
+    background-size: 300%;
+    transition: .2s ease-out;
+  }
+
+  &__button:hover {
+    color: white;
+    background-position: right;
+  }
+}

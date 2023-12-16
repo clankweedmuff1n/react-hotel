@@ -1,0 +1,86 @@
+.rooms {
+  width: 100%;
+  display: flex;
+  padding: 4rem 0 4rem 0;
+  background-color: #f2ebe2;
+
+  &__wrapper {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text {
+    text-align: center;
+    font-weight: 400;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    margin: 1.5rem 0 2rem 0;
+    font-size: 19px;
+    font-weight: 400;
+  }
+
+  &__element {
+    background-color: white;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    width: 32%;
+  }
+
+  &__element_wrapper {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__element_title {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 1.5rem 0 0 0;
+  }
+
+  &__element_subtitle {
+    margin: 1.5rem 0 0 0;
+    font-weight: 500;
+    color: #555555;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Merriweather", serif;
+    width: 100%;
+    margin: 2rem 0 0 0;
+    background: linear-gradient(to right, white 50%, #6a3a29 50%) left;
+    background-size: 200%;
+    transition: .2s ease-out;
+    border: #222222 1px solid;
+  }
+
+  &__button:hover {
+    color: white;
+    background-position: right;
+  }
+
+  &__button_text {
+    padding: 1rem 2rem 1rem 2rem;
+    margin: 0;
+  }
+}

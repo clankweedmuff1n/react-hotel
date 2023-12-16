@@ -1,0 +1,45 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  color: #eae3d9 !important;
+
+  &__additional {
+    background-color: #75726d;
+    justify-content: center;
+    display: flex;
+  }
+
+  &__text {
+    text-align: center;
+    padding: 1.625rem 0;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    line-height: 2;
+  }
+
+  &__additional_container {
+    display: flex;
+  }
+
+  &__main {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  &__title_red {
+    color: #6a3a29;
+  }
+
+  &__title {
+    padding: 1rem 0;
+  }
+}
