@@ -1,0 +1,23 @@
+.element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #424242;
+  margin: 1rem;
+  line-height: 2rem;
+  background: #efe6df;
+  min-width: 10rem;
+  width: auto;
+
+  padding-top: 4px;
+  padding-bottom: 4px;
+
+  &__text {
+    margin: 0 0.5rem 0 0.5rem;
+  }
+
+  &__icon {
+    margin-right: 0.5rem;
+  }
+}

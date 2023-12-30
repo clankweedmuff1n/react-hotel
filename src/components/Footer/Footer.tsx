@@ -1,49 +1,73 @@
 import React from 'react';
 import styleFooter from './Footer.module.scss';
+import AdditionalButton from "./AdditionalButton/AdditionalButton";
 
 class Footer extends React.Component {
     render() {
+        const navData = [
+            {
+                text: "Accommodation",
+                href: "#",
+            },
+            {
+                text: "Services",
+                href: "#",
+            },
+            {
+                text: "Meetings and events",
+                href: "#",
+            },
+            {
+                text: "Restaurant",
+                href: "#",
+            },
+            {
+                text: "About us",
+                href: "#",
+            },
+            {
+                text: "Contact info",
+                href: "#",
+            },
+        ];
+
+        const additionalNavData = [
+            {
+                text: "Careers",
+                href: "#",
+            },
+            {
+                text: "Yksityisyys",
+                href: "#",
+            },
+            {
+                text: "Terms & Conditions",
+                href: "#",
+            },
+            {
+                text: "Cookie policy",
+                href: "#",
+            },
+            {
+                text: "Safety protocols",
+                href: "#",
+            },
+        ];
+
         return (
             <section className={styleFooter.footer}>
                 <div className={styleFooter.footer__additional}>
                     <div className={styleFooter.footer__additional_container}>
-                        <div className={styleFooter.footer__text}>
-                            Accommodation
-                        </div>
-                        <div className={styleFooter.footer__text}>
-                            Services
-                        </div>
-                        <div className={styleFooter.footer__text}>
-                            Meetings and events
-                        </div>
-                        <div className={styleFooter.footer__text}>
-                            Restaurant
-                        </div>
-                        <div className={styleFooter.footer__text}>
-                            About us
-                        </div>
-                        <div className={styleFooter.footer__text}>
-                            Contact info
-                        </div>
+                        {navData.map((nav, index) => (
+                            <AdditionalButton key={index} text={nav.text} hrefUrl={nav.href}/>
+                        ))}
                     </div>
                 </div>
                 <div className={styleFooter.footer__main}>
                     <div className={styleFooter.footer__row}>
-                        <div className={styleFooter.footer__text}>
-                            Careers
-                        </div>
-                        <div className={styleFooter.footer__text}>
-                            Yksityisyys
-                        </div>
-                        <div className={styleFooter.footer__text}>
-                            Terms & Conditions
-                        </div>
-                        <div className={styleFooter.footer__text}>
-                            Cookie policy
-                        </div>
-                        <div className={styleFooter.footer__text}>
-                            Safety protocols
-                        </div>
+                        {additionalNavData.map((nav, index) => (
+                            <AdditionalButton key={index} text={nav.text} hrefUrl={nav.href}/>
+                        ))}
                     </div>
                     <div className={styleFooter.footer__row}>
                         <p className={`${styleFooter.footer__text} ${styleFooter.footer__title}`}>
